@@ -1,17 +1,11 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 	<head>
-		<title>Chippewa Valley Carpool</title>
-		<meta name="description" content="This is the home page for the Chippewa Valley Carpool website.">
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 	</head>
-	<header>
-		<%@ include file="includes/navigation.jsp" %>
-	</header>
 	<br>
 	<body>
+		<%@ include file="includes/navigation.jsp" %>
 		<div id="SiteInfo">
 			<section class="infoLeft"> 
 				<h1>About Us</h1>
@@ -24,52 +18,36 @@
 			</section>
 			<section class="infoRight">
 				<h1>Why Chippewa Valley Carpool?</h1>
-				<p>What we do different; nonprofit statement; locally owned and operated.</p>
+				<p>Chippewa Valley Carpool is locally owned and operated within the Chippewa Valley area. <br>
+        Our goal is to provide a safe, affordable, and convenient method of transportation.<br>
+        The way that our service is setup, you are allowed to see the poeple you would be riding with,<br>
+        so if someone doesn't seem like they are compatible with you, or you don't feel comfotable<br>
+        with them, you can choose not to ride with them. Also, our service uses either cash such as<br>
+        a taxi service might, but you can also choose to pay online with your card, however there will<br>
+        a small charge to your account to help pay for website maintinence.</p>
 			</section>
 			<section class="infoLeft">
-				<h1>Section 3</h1>
-				<p>Information Section 3</p>
-			</section>
+				<h1>Check Your Area For Rides</h1>
+        <p>Download the following map if you want to see the area that we have our carpool services available in:</p>
+        <a href="../images/chippewaValleyMap.png" target="_blank">Map</a> 
+        <br>
+        <br>
+        <form id="checkForRides">
+          <input type="text" id="pickup" name="pickup" placeholder="Enter your Pickup Location...">
+          <input type="text" id="destination" name="destination" placeholder="Enter your Destination...">
+          <br>
+          <input type="submit" value="Search">
+        </form>
+      </section>
+      <!--
 			<section class="infoRight">
 				<h1>Section 4</h1>
 				<p>Information Section 4</p>
 			</section>
+      -->
 		</div>
 	</body>
 	<br>
 	<%@ include file="includes/footer.jsp" %>
 	<%@ include file="includes/scripts.jsp" %>
 </html>
-<!--
-<div class="sideMenu">		
-	<a class="sideButton" href="?productGroupId=1&amp;literatureTypeId=1">
-	Brochures							
-	</a>
-    
-	<a class="sideButton" href="?productGroupId=1&amp;literatureTypeId=2">
-	Installations							
-	</a>						
-	
-	<a class="sideButton" href="?productGroupId=1&amp;literatureTypeId=3">
-	Specs and Warranty							
-	</a>
-	
-	<br><br><br>
-    
-	<a class="sideButton" href="?productGroupId=3&amp;literatureTypeId=1"> 
-	Countertops 
-	</a>
-				
-	<a class="sideButton active" href="?productGroupId=1&amp;literatureTypeId=1"> 
-	Doors 
-	</a>				
-
-	<a class="sideButton" href="?productGroupId=8&amp;literatureTypeId=1"> 
-	Pole Barn Buildings 
-	</a>							
-
-	<a class="sideButton" href="?productGroupId=2&amp;literatureTypeId=1"> 
-	Residential Steel &amp; Roofing 
-	</a>								
-</div>
--->
