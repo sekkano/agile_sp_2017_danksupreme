@@ -2,19 +2,84 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<head>
-		<title>Home</title>
-		<meta name="description" content="This is a JSP for the home page.">
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" type="text/css" href="../css/main.css">
 	</head>
+	<header>
+		<div id="logo">
+			<a href="index.html">
+				<img src=""><p>Logo</p>
+			</a>
+		</div>
+		<div id="menu">
+			<a href="ride.html">Request a Ride</a>
+			<a href="drive.html">Setup a Drive</a>
+			<a href="contact.html">Contact Us</a>
+		</div>
+	</header>
+	<br>
 	<body>
-		<div class="container">
-			<div class="hero-unit">
-				<h1>Home</h1>
-			</div>
-			<%@ include file="includes/navigation.jsp" %>
+		<div id="SiteInfo">
+			<section class="infoLeft"> 
+				<h1>About Us</h1>
+				<p>With our partners, our coffee and our customers at our core, we live these values:<br><br>
+				Creating a culture of warmth and belonging, where everyone is welcome.<br>
+				Acting with courage, challenging the status quo and finding new ways to grow our company and each other.<br>
+				Being present, connecting with transparency, dignity and respect.<br>
+				Delivering our very best in all we do, holding ourselves accountable for results.<br>
+				We are performance driven, through the lens of humanity.</p>
+			</section>
+			<section class="infoRight">
+				<h1>Why Chippewa Valley Carpool?</h1>
+				<p>What we do different; nonprofit statement; locally owned and operated.</p>
+			</section>
+			<section class="infoLeft">
+				<h1>Section 3</h1>
+				<p>Information Section 3</p>
+			</section>
+			<section class="infoRight">
+				<h1>Section 4</h1>
+				<p>Information Section 4</p>
+			</section>
 		</div>
-			<%@ include file="includes/footer.jsp" %>
-		</div>
-		<%@ include file="includes/scripts.jsp" %>
 	</body>
+	<br>
+	<footer>
+		<a href="logoLocation">
+			<img src="">
+		</a>
+		&copy; 2017 Chippewa Valley Carpool
+	</footer>
 </html>
+<!--
+<div class="sideMenu">		
+	<a class="sideButton" href="?productGroupId=1&amp;literatureTypeId=1">
+	Brochures							
+	</a>
+    
+	<a class="sideButton" href="?productGroupId=1&amp;literatureTypeId=2">
+	Installations							
+	</a>						
+	
+	<a class="sideButton" href="?productGroupId=1&amp;literatureTypeId=3">
+	Specs and Warranty							
+	</a>
+	
+	<br><br><br>
+    
+	<a class="sideButton" href="?productGroupId=3&amp;literatureTypeId=1"> 
+	Countertops 
+	</a>
+				
+	<a class="sideButton active" href="?productGroupId=1&amp;literatureTypeId=1"> 
+	Doors 
+	</a>				
+
+	<a class="sideButton" href="?productGroupId=8&amp;literatureTypeId=1"> 
+	Pole Barn Buildings 
+	</a>							
+
+	<a class="sideButton" href="?productGroupId=2&amp;literatureTypeId=1"> 
+	Residential Steel &amp; Roofing 
+	</a>								
+</div>
+-->
