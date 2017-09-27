@@ -10,71 +10,74 @@ h1 {
 }
 
 header {
-	position: relative;
-	background-color: #5280B6;
-	color: white;
-	text-align: left;
-	padding-right: 2%;
-	padding-left: 2%;
-    box-shadow: 3px 3px 3px #082E6A;
+  position: relative;
+  background-color: #5280B6;
+  color: white;
+  text-align: left;
+  padding-right: 2%;
+  padding-left: 2%;
+  box-shadow: 3px 3px 3px #082E6A;
 }
 
 
 /*Navigation*/
 
 #logo {
-	display: inline-block;
-	padding-right: 40%
+  display: inline-block;
+  padding-right: 40%
 }
 
 #menu {
-	display: inline-block;
+  display: inline-block;
   padding: 10px;
   margin: 10px;
+  position: absolute;
+  left: 800px;
+  bottom: 10px;
+  font-size: 32px;
 }
 
-a {
+#menu a {
   background-color: #476FAE;
   color: #D6E6F8 ;
   padding:10px;
   text-decoration: none;
   box-shadow: 3px 3px 3px #082E6A;
-
 }
 
 
-a:visited {
+#menu a:visited {
   background-color: #201E75;
 }
 
-a:hover {
+#menu a:hover {
   background-color: #15436C;
 }
 
-a:active {
-  background-color: #5BB595;
+#menu a:active {
+ background-color: #5BB595;
 } 
 
 /*End Nav*/
 
 .infoLeft {
-	text-align: left;
-	padding-left: 10%;
+  text-align: left;
+  padding-left: 10%;
   background-color: #35649D;
   padding: 20px;
   margin: 15px;
   box-shadow: 3px 3px 3px #082E6A;
-
+  width: 90%;
 }
 
 .infoRight {
-	text-align: right;
-	padding-right: 10%;
+  text-align: right;
+  padding-right: 10%;
   background-color: #5280B6;
   padding: 20px;
-  margin: 15px;
+  margin: auto;
   box-shadow: 3px 3px 3px #082E6A;
-
+  width: 90%;
 }
 
 input[type=text], select, textarea {
@@ -112,15 +115,13 @@ input[type=submit]:hover {
   height: 200px;
 }
 
-
-
 footer {
-	background-color: #3b5998;
-	color: #D6E6F8;
-	text-align: center;
-	position: fixed;
-	bottom: 0;
-	width: 99%;
+  background-color: #3b5998; 
+  color: #D6E6F8;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 99%;
   border-radius: 5px;
   box-shadow: 3px 3px 3px #082E6A;
   padding-top: 10px; 
@@ -130,3 +131,74 @@ footer {
   padding-right: 50px;
   padding-bottom: 50px;
   }
+  
+#van {
+  float:right;
+  width:30%;
+  position: relative;
+  right: 190px;
+  bottom: 70px;
+}
+
+#why {
+  float: left;
+  width: 15%;
+  position: relative;
+  left: 300px;
+  bottom: 10px;
+}
+
+#pickup {
+  width: 50%;
+}
+
+#googleMap {
+  float: right;
+  width: 20%;
+  position: relative;
+  right: 240px;
+  top: 10px;
+}
+
+#mapDownload {
+  background-color: #476FAE;
+  color: #D6E6F8 ;
+  padding:10px;
+  text-decoration: none;
+  box-shadow: 3px 3px 3px #082E6A;
+}
+
+#dank {
+	left: 600px;
+	bottom: -17px;
+	position: absolute;
+	float: left;
+	width: 5%;
+	margin: auto;
+}
+
+#driverContent, #riderContent {
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: #35649D;
+  padding: 20px;
+  margin: auto;
+  box-shadow: 3px 3px 3px #082E6A;
+  width: 50%;
+  border-radius: 40px;
+}
+
+#contactContent {
+  padding-right: 50%;
+  padding-left: 4%;
+  width: 40%;
+  margin: auto;
+  background-color: #35649D;
+  border-radius: 40px;
+  box-shadow: 3px 3px 3px #082E6A;
+}
+
+#contactContent h1{
+  text-align: center;
+}
