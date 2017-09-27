@@ -7,15 +7,16 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 	</head>
+	<header>
+		<%@ include file="includes/navigation.jsp" %>
+	</header>
+	<br>
 	<body>
-		<div class="container">
-			<div>
-				<h1>Sign Up</h1>
-			</div>
-			<%@ include file="includes/navigation.jsp" %>
-			
-			<%@ include file="includes/footer.jsp" %>
+		<div id="SiteInfo">
+			<h1>Sign Up</h1>
 		</div>
-		<%@ include file="includes/scripts.jsp" %>
 	</body>
+	<br>
+	<%@ include file="includes/footer.jsp" %>
+	<%@ include file="includes/scripts.jsp" %>
 </html>
