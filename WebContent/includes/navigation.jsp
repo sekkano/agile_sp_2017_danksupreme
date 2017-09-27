@@ -1,7 +1,11 @@
-<ul>
-	<li><a href="index.jsp">Home</a></li>
-	<li><a href="signup.jsp">Sign Up</a>
-	<li><a href="requestAride.jsp">Request a Ride</a></li>
-	<li><a href="beAdriver.jsp">Be a Driver</a></li>
-	<li><a href="contact.jsp">Contact Us</a></li>
-</ul>
+<div id="logo">
+	<a href="index.jsp">
+		<img src="assets/img/CV.jpg">
+	</a>
+</div>
+<div id="menu">
+	<a href="signup.jsp">Sign Up</a>
+	<a href="requestAride.jsp">Request a Ride</a>
+	<a href="beAdriver.jsp">Be a Driver</a>
+	<a href="contact.jsp">Contact Us</a>
+</div>

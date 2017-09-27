@@ -2,19 +2,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="../css/main.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 	</head>
 	<header>
-		<div id="logo">
-			<a href="index.html">
-				<img src=""><p>Logo</p>
-			</a>
-		</div>
-		<div id="menu">
-			<a href="ride.html">Request a Ride</a>
-			<a href="drive.html">Setup a Drive</a>
-			<a href="contact.html">Contact Us</a>
-		</div>
+		<%@ include file="includes/navigation.jsp" %>
 	</header>
 	<br>
 	<body>
@@ -23,12 +14,8 @@
 		</div>
 	</body>
 	<br>
-	<footer>
-		<a href="logoLocation">
-			<img src="">
-		</a>
-		&copy; 2017 Chippewa Valley Carpool
-	</footer>
+	<%@ include file="includes/footer.jsp" %>
+	<%@ include file="includes/scripts.jsp" %>
 </html>
 <!--
 <div class="sideMenu">		

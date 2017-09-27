@@ -5,6 +5,7 @@
 		<title>Sign Up</title>
 		<meta name="description" content="This is the page where people are sent to sign up to be a driver or car pooler">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 	</head>
 	<body>
 		<div class="container">

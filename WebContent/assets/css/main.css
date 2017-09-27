@@ -1,2 +1,127 @@
 
- .container {width:1000px;}
+body {
+ background: linear-gradient(to bottom right, #8ED4BB, #082E6A); 
+ color: #D6E6F8;
+    
+}
+
+h1 {
+  color: #082E6A;
+}
+
+header {
+	position: relative;
+	background-color: #5280B6;
+	color: white;
+	text-align: left;
+	padding-right: 2%;
+	padding-left: 2%;
+    box-shadow: 3px 3px 3px #082E6A;
+}
+
+
+/*Navigation*/
+
+#logo {
+	display: inline-block;
+	padding-right: 40%
+}
+
+#menu {
+	display: inline-block;
+    padding: 10px;
+    margin: 10px;
+}
+
+a {
+  background-color: #476FAE;
+  color: #D6E6F8 ;
+  padding:10px;
+  text-decoration: none;
+  box-shadow: 3px 3px 3px #082E6A;
+
+}
+
+
+a:visited {
+    background-color: #201E75;
+}
+
+a:hover {
+    background-color: #15436C;
+}
+
+a:active {
+    background-color: #5BB595;
+} 
+
+/*End Nav*/
+
+.infoLeft {
+	text-align: left;
+	padding-left: 10%;
+    background-color: #35649D;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 3px 3px 3px #082E6A;
+
+}
+
+.infoRight {
+	text-align: right;
+	padding-right: 10%;
+    background-color: #5280B6;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 3px 3px 3px #082E6A;
+
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #00CFEC;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #028B9E;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+#message {
+  height: 200px;
+}
+
+
+
+footer {
+	background-color: #3b5998;
+	color: #D6E6F8;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	width: 99%;
+    padding:10px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px #082E6A;
+
+}
