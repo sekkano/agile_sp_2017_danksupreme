@@ -36,9 +36,38 @@
 				a taxi service might, but you can also choose to pay online with your card, however there will<br>
 				a small charge to your account to help pay for website maintinence.</p>
 			</section>
-			
 			<section class="infoLeft">
-				<img id="googleMap" src="../images/googleMap.jpg">
+				<div id="map">
+        <script>
+        //CREATES NEW MAP//
+        function initMap() { //Call this function whenever a new marker needs to be made
+          var centerPoint = {lat: 45.060, lng: -91.407}; 
+          
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 10, 
+            center: centerPoint
+          });
+        }
+        //CREATES ONCLICK EVENT//
+        google.maps.event.addListener(map, 'click', function(event) { //OnClick Function that generates a new marker
+          placeMarker(event.latLng); //Save this info to the database
+        });
+
+        //ONCLICK EVENT - ADDS MARKER
+        function placeMarker(location) { //Shows the user where their marker is placed
+          var title = prompt("Enter a name for your marker: "); //Ask user for input
+          reader.close(); //close scanner
+          var marker = new google.maps.Marker({ 
+            position: markerPoint,
+            map: map,
+            title: title //call reader as title of new marker
+          });
+        }
+        </script>
+        <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXN1Lb8qN-4PW7PQ9nmBc9BZHb56gpttM&callback=initMap">
+        </script>        
+        </div>
 				<h1>Check Your Area For Rides</h1>
 				<p>Download the following map if you want to see the area that we have our carpool services available in:</p>
 				<a id="mapDownload" href="../images/chippewaValleyMap.png" target="_blank">Map Download</a><br><br>
