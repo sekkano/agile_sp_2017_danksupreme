@@ -1,11 +1,23 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!doctype html>
 <html>
 	<head>
+		<title>Error</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>Insert title here</title>
+		<meta name="description" content="This is a JSP that will give a Error message">
+		<%@ include file="includes/styles.jsp" %>
 	</head>
 	<body>
-	
+		<div class="container">
+			<div class="hero-unit">
+				<h1>Error</h1>
+			</div>
+			<%@ include file="includes/navigation.jsp" %>
+			<div class="container">
+				<p>${error}</p>
+			</div>
+			<hr>
+			<%@ include file="includes/footer.jsp" %>
+		</div>
+		<%@ include file="includes/scripts.jsp" %>
 	</body>
 </html>
