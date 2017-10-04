@@ -2,13 +2,14 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+		<title>Test</title>
 	</head>
 	<br>
 	<body>
 		<%@ include file="includes/navigation.jsp" %>
 		<div id="SiteInfo">
 			<section class="infoLeft"> 
-				<img id="van" src="../images/van.png">
+				<img id="van" src="assets/img/van.png">
 				<h1>About Us</h1>
 				<p>With our partners, our coffee and our customers at our core, we live these values:<br><br>
 				Creating a culture of warmth and belonging, where everyone is welcome.<br>
@@ -18,7 +19,7 @@
 				We are performance driven, through the lens of humanity.</p>
 			</section>
 			<section class="infoRight">
-				<img id="why" src="../images/butWhyThough.png">
+				<img id="why" src="assets/img/butWhyThough.png">
 				<h1>Why Chippewa Valley Carpool?</h1>
 				<p>Chippewa Valley Carpool is locally owned and operated within the Chippewa Valley area. <br>
 				Our goal is to provide a safe, affordable, and convenient method of transportation.<br>

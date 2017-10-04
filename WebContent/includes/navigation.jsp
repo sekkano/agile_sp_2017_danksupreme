@@ -1,6 +1,6 @@
 <header>
 	<div id="logo">
-		<a href="index.jsp"><img src="../images/CVCLogo."></a>
+		<a href="index.jsp"><img src="assets/img/CVCLogo.png"></a>
 	</div>
 	<div id="menu">
 		<a href="ride.jsp">Request a Ride</a>
