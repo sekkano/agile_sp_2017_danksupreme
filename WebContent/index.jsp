@@ -63,7 +63,7 @@
         </div>
 				<h1>Check Your Area For Rides</h1>
 				<p>Download the following map if you want to see the area that we have our carpool services available in:</p>
-				<a id="mapDownload" href="../images/chippewaValleyMap.png" target="_blank">Map Download</a><br><br>
+				<a id="mapDownload" href="assets/img/chippewaValleyMap.png" target="_blank">Map Download</a><br><br>
 				<form id="checkForRides">
 					<input type="text" id="pickup" name="pickup" placeholder="Enter your Pickup Location...">
 					<input type="text" id="pickup" name="destination" placeholder="Enter your Destination...">
