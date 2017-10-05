@@ -1,14 +1,11 @@
-
 body {
  background: linear-gradient(to bottom right, #8ED4BB, #082E6A); 
  color: #D6E6F8;
     
 }
-
 h1 {
   color: #082E6A;
 }
-
 header {
   position: relative;
   background-color: #5280B6;
@@ -18,31 +15,32 @@ header {
   padding-left: 2%;
   box-shadow: 3px 3px 3px #082E6A;
 }
-
-
 /*Navigation*/
-
+#head {
+	position: relative;
+}
+.smallScreen {
+	display: none;	
+}
 #logo {
   display: inline-block;
-  padding-right: 40%
 }
-
 #menu {
+  font-size: 36px;
   display: inline-block;
-  padding: 10px;
-  margin: 10px;
   position: absolute;
-  left: 800px;
-  bottom: 10px;
-  font-size: 32px;
+  top: 90px;
+  margin-left: 5%;
+  padding-left: 10px;
 }
 
 #menu a {
   background-color: #476FAE;
   color: #D6E6F8 ;
-  padding:10px;
   text-decoration: none;
-  box-shadow: 3px 3px 3px #082E6A;
+  border: 1px solid;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 
@@ -204,4 +202,43 @@ footer {
 
 #contactContent h1{
   text-align: center;
+}
+
+@media screen and (min-width: 975px) and (max-width: 1200px) {
+  #logo img {
+    width: 75%;
+    height: 75%;
+  }
+  #menu {
+	font-size: 24px;
+	top: 70px;
+	margin-left: 0%;
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 975px) {
+  #head {
+    padding-bottom: 2%;
+  }
+  #logo {
+    display: block;
+    font-size: 40px;
+  	text-align: center;
+  	vertical-align: middle;
+  	margin: 0 auto;
+  }
+  #menu {
+  	display: block;
+	margin: 0 auto;
+	text-align: center;
+	position: inherit;
+	top: 0px;
+	padding-left: 0%;
+  }
+  .largeScreen {
+  	display: none;
+  }
+  .smallScreen {
+  	display: inline-block;
+  }
 }

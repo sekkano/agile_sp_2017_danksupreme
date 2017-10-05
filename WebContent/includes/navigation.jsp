@@ -2,7 +2,7 @@
 	<div id="head">
 		<div id="logo">
 			<a href="index.jsp"><img class="largeScreen" src="assets/img/CVCLogo.png"></a>
-			<p class="smallScreen"></p>
+			<p class="smallScreen">Chippewa Valley Carpool</p>
 		</div>
 		<div id="menu">
 			<a href="ride.jsp">Request a Ride</a>
