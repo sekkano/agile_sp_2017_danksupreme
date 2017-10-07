@@ -66,16 +66,21 @@ header {
   margin: 15px;
   box-shadow: 3px 3px 3px #082E6A;
   width: 90%;
+  margin-right: 80%;
 }
 
 .infoRight {
-  text-align: right;
   padding-right: 10%;
   background-color: #5280B6;
   padding: 20px;
   margin: auto;
   box-shadow: 3px 3px 3px #082E6A;
   width: 90%;
+}
+
+.infoRight p, .infoRight h1 {
+	padding-left: 50%;
+	overflow: visible;
 }
 
 input[type=text], select, textarea {
@@ -142,7 +147,7 @@ footer {
   float: left;
   width: 15%;
   position: relative;
-  left: 300px;
+  left: 200px;
   bottom: 10px;
 }
 
@@ -203,8 +208,23 @@ footer {
 #contactContent h1{
   text-align: center;
 }
+@media screen and (min-width:1200px) and (max-width: 1400px) {
+	#menu {
+	  font-size: 28px;
+	}
+	#van{
+		right: 0px;
+		bottom: 40px;
+	}
+	.infoRight p {
+	  padding-left: 40%;
+	}
+	#map {
+		right: 10px;
+	}
+}
 
-@media screen and (min-width: 975px) and (max-width: 1200px) {
+@media screen and (min-width: 1030px) and (max-width: 1200px) {
   #logo img {
     width: 75%;
     height: 75%;
@@ -214,9 +234,21 @@ footer {
 	top: 70px;
 	margin-left: 0%;
   }
+  #van {
+    display: none;
+  }
+  #why {
+  	display: none;
+  }  
+  .infoRight p {
+	  padding-left: 40%;
+	}
+	#map {
+		display: none;
+	}
 }
 
-@media screen and (min-width: 450px) and (max-width: 975px) {
+@media screen and (min-width: 830px) and (max-width: 1030px) {
   #head {
     padding-bottom: 2%;
   }
@@ -241,4 +273,56 @@ footer {
   .smallScreen {
   	display: inline-block;
   }
+  #van {
+    display: none;
+  }
+  #why {
+  	display: none;
+  }
+  .infoRight p {
+	  padding-left: 20%;
+	}
+	#map {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 450px) and (max-width: 830px) {
+	#head {
+    padding-bottom: 2%;
+  }
+  #logo {
+    display: block;
+    font-size: 40px;
+  	text-align: center;
+  	vertical-align: middle;
+  	margin: 0 auto;
+  }
+  #menu {
+  	display: block;
+	margin: 0 auto;
+	text-align: center;
+	position: inherit;
+	top: 0px;
+	padding-left: 0%;
+	font-size: 32px;
+  }
+  .largeScreen {
+  	display: none;
+  }
+  .smallScreen {
+  	display: inline-block;
+  }
+  #van {
+    display: none;
+  }
+  #why {
+  	display: none;
+  }
+  #map {
+  	display: none;
+  }
+  .infoRight p {
+	  padding-left: 0%;
+	}
 }
