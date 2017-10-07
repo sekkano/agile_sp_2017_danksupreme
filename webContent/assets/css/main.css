@@ -1,15 +1,11 @@
-
 body {
  background: linear-gradient(to bottom right, #8ED4BB, #082E6A); 
  color: #D6E6F8;
- margin: 40px;   
+    
 }
-
 h1 {
   color: #082E6A;
-  padding:30px;
 }
-
 header {
   position: relative;
   background-color: #5280B6;
@@ -19,28 +15,32 @@ header {
   padding-left: 2%;
   box-shadow: 3px 3px 3px #082E6A;
 }
-
 /*Navigation*/
-
-#logo {
-  display:inherit;
-  padding-right: 40%
+#head {
+	position: relative;
 }
-
+.smallScreen {
+	display: none;	
+}
+#logo {
+  display: inline-block;
+}
 #menu {
-  padding: 10px;
-  margin: 10px;
-  left: 800px;
-  bottom: 10px;
-  font-size: 32px;
+  font-size: 36px;
+  display: inline-block;
+  position: absolute;
+  top: 90px;
+  margin-left: 5%;
+  padding-left: 10px;
 }
 
 #menu a {
   background-color: #476FAE;
   color: #D6E6F8 ;
-  padding:10px;
   text-decoration: none;
-  box-shadow: 3px 3px 3px #082E6A;
+  border: 1px solid;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 
@@ -133,6 +133,7 @@ footer {
 #van {
   float:right;
   width:30%;
+  position: relative;
   right: 190px;
   bottom: 70px;
 }
@@ -151,19 +152,22 @@ footer {
 
 #map {
   float: right;
-  width: 200px;
+  width: 300px;
   height: 300px;
+  position: relative;
+  right: 180px;
+  top: 10px;
   border-style: solid;
   border-width: 10px;
-  box-shadow: 3px 3px 3px black;
-  left: 30px;
-  right: 30px;
-  margin-bottom: 30px;
-  margin-right: 30px;
-  margin-left: 30px;
-  
 }
 
+#mapDownload {
+  background-color: #476FAE;
+  color: #D6E6F8 ;
+  padding:10px;
+  text-decoration: none;
+  box-shadow: 3px 3px 3px #082E6A;
+}
 
 #dank {
 	left: 600px;
@@ -200,120 +204,41 @@ footer {
   text-align: center;
 }
 
-
-#mapDownload{
-  padding: 10px;
-  background-color: #00CFEC;
-  border-radius: 5px;
-  text-decoration: none;
-  color: white;
-}
-
-
-/*desktop*/
-@media screen and (max-width:2500px){
-
-#menu a {
-    float: right;
-    padding:auto;
-    text-align:center;
-    padding:10px 10px;
-    color: #8ED4BB;
-    text-transform: uppercase;
-    font: bold 25px Arial, Helvetica;
-    text-decoration: none;
-}
-
-  #map{
-    width: 100%;
+@media screen and (min-width: 975px) and (max-width: 1200px) {
+  #logo img {
+    width: 75%;
+    height: 75%;
   }
-}
-
-/*tablets*/
-@media screen and (max-width: 805px) {
-  #van{
-    display: none;
-  }
-  
-  #why{
-    display: none;
-  }
-  
-    #map{
-    display: inline-block;
-    margin: 20px;
-    padding: 20px;
-    margin-top: 20px;
-    width:200px;
-    height: 200px;
-    width: 90%;
-  }
-  
-  #checkForRides {
-    margin-top: 30px;
-    display: block;
-    position:inherit;
-  }
-  
-  #pickup{
-    margin-left: 40px;
-  }
-
-  #dank {
-    display: none;
-  }
-
-  /*nav*/
-  
   #menu {
-    padding:0;
-    margin-top:0px;
-    top:0px;
-    float:left;
-    margin-right: 200px;
-}
-  
-  #about{
-    margin-top: 80px;
+	font-size: 24px;
+	top: 70px;
+	margin-left: 0%;
   }
-  
-  .infoLeft{
-    margin-left: 0px;
+}
+
+@media screen and (min-width: 450px) and (max-width: 975px) {
+  #head {
+    padding-bottom: 2%;
   }
-
-#menu li {
-    list-style:none;
-    float: left;
-    position: relative; 
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border:1px solid black; 
-    background-image: linear-gradient(#F2FF00, #AEFF00);
-    margin-left:10px;
-}
-
-#menu a {
-    display:block;
-    padding:auto;
-    text-align:center;
-    padding:10px 10px;
-    color: #8ED4BB;
-    text-transform: uppercase;
-    font: bold 25px Arial, Helvetica;
-    text-decoration: none;
-    margin-bottom: 20px;
-    width: 100%
+  #logo {
+    display: block;
+    font-size: 40px;
+  	text-align: center;
+  	vertical-align: middle;
+  	margin: 0 auto;
   }
-
-  
-  .logoVan{
-    
-    display: inline-block;
-    padding: 20px;
-    width: 150%;
+  #menu {
+  	display: block;
+	margin: 0 auto;
+	text-align: center;
+	position: inherit;
+	top: 0px;
+	padding-left: 0%;
+  }
+  .largeScreen {
+  	display: none;
+  }
+  .smallScreen {
+  	display: inline-block;
+  }
 }
-  
-}
-  
-
-
