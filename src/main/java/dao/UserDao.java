@@ -13,7 +13,7 @@ import model.User;
  */
 public interface UserDao {
 	
-	void populate(String filePath) throws Exception;
+	void submitUserData(String filePath) throws Exception;
 	
 	List<User> retrieveUser() throws Exception;
 	

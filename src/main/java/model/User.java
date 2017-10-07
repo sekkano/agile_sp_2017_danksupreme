@@ -9,7 +9,6 @@ package model;
  */
 public class User {
 	
-	private final int userID;
 	private final String firstName;
 	private final String lastName;
 	private final String userName;
@@ -18,9 +17,9 @@ public class User {
 	private final String stateCode;
 	private final String phoneNumber;
 	private final String emailAddress;
+	private final String password;
 	
-	public User(int userID, String firstName, String lastName, String userName, String streetAddress, String city, String stateCode, String phoneNumber, String emailAddress) {
-		this.userID = userID;
+	public User(String firstName, String lastName, String userName, String streetAddress, String city, String stateCode, String phoneNumber, String emailAddress, String password) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.userName = userName;
@@ -29,12 +28,7 @@ public class User {
 		this.stateCode = stateCode;
 		this.phoneNumber = phoneNumber;
 		this.emailAddress = emailAddress;
-	}
-
-	
-	
-	public int getUserID() {
-		return userID;
+		this.password = password;
 	}
 
 
@@ -87,11 +81,21 @@ public class User {
 
 
 
+	public String getPassword() {
+		return password;
+	}
+
+
+
 	@Override
 	public String toString() {
-		return "User [userID=" + userID + ", firstName=" + firstName + ", lastName=" + lastName + ", userName="
+		return "User [firstName=" + firstName + ", lastName=" + lastName + ", userName="
 				+ userName + ", streetAddress=" + streetAddress + ", city=" + city + ", stateCode=" + stateCode
-				+ ", phoneNumber=" + phoneNumber + ", emailAddress=" + emailAddress + "]";
+				+ ", phoneNumber=" + phoneNumber + ", emailAddress=" + emailAddress + ", password=" + password + "]";
 	}
+
+
+
+
 
 }
