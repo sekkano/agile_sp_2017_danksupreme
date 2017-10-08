@@ -1,4 +1,3 @@
-
 <header>
 	<div id="head">
 		<div id="logo">
@@ -6,10 +5,10 @@
 			<p class="smallScreen">Chippewa Valley Carpool</p>
 		</div>
 		<div id="menu">
-      <a href="signup.jsp">Sign Up</a>
+      		<a href="signup.jsp">Sign Up</a>
 			<a href="ride.jsp">Request a Ride</a>
 			<a href="drive.jsp">Setup a Drive</a>
-			<a href="contact.jsp">Contact Us</a>
+			<a href="contact.jsp">Contact Us</a>			
 		</div>
 	</div>
 </header>
