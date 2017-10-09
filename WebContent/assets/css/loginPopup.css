@@ -1,28 +1,27 @@
-.container {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 14px;
-  color: #666;
-}
-
-#lean_overlay {
-  position: fixed;
-  z-index: 100;
-  top: 0px;
-  left: 0px;
-  height: 100%;
-  width: 100%;
-  background: #000;
-  display: none;
-}
-
 .popupContainer {
   display: none;
   position: absolute;
   width: 330px;
+  margin: auto;
   height: auto;
-  left: 45%;
-  top: 60px;
+  left: 40%;
+  top: 300px;
   background: #FFF;
+  border: 1px solid #006080;
+  z-index: 1;
+  color: black;
+}
+
+@media screen and (max-width: 550px) {
+  .popupContainer {
+    left: 20%;
+  }
+}
+
+@media screen and (min-width: 550px) and (max-width: 800px) {
+  .popupContainer {
+    left: 30%;
+  }
 }
 
 .btn {
@@ -30,21 +29,20 @@
   background: #F4F4F2;
 }
 
-.btn_red {
-  background: #ED6347;
-  color: #FFF;
+.btn_blue {
+  background: #00CFEC;
 }
 
 .btn:hover {
   background: #E4E4E2;
 }
 
-.btn_red:hover {
-  background: #C12B05;
+.btn_blue:hover {
+  background: #028B9E;
 }
 
 a.btn {
-  color: #666;
+  color: black;
   text-align: center;
   text-decoration: none;
 }
@@ -64,12 +62,10 @@ a.btn_red {
   margin-left: 5%;
 }
 
-
-/* Popup Styles*/
-
 .popupHeader {
   font-size: 16px;
   text-transform: uppercase;
+  color: black;
 }
 
 .model_close img {
@@ -101,11 +97,6 @@ a.btn_red {
   padding: 20px;
 }
 
-
-/* Social Login Form */
-
-.social_login {}
-
 .social_login .social_box {
   display: block;
   clear: both;
@@ -113,6 +104,7 @@ a.btn_red {
   margin-bottom: 10px;
   background: #F4F4F2;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 .social_login .icon {
@@ -154,7 +146,6 @@ a.btn_red {
   margin: 20px 0;
   clear: both;
   overflow: hidden;
-  text-transform: uppercase;
 }
 
 .action_btns {
@@ -165,9 +156,6 @@ a.btn_red {
 .action_btns a {
   display: block;
 }
-
-
-/* User Login Form */
 
 .user_login {
   display: none;
@@ -194,11 +182,8 @@ a.btn_red {
   clear: both;
   overflow: hidden;
   text-decoration: none;
-  color: #ED6347;
+  color: #00CFEC;
 }
-
-
-/* User Register Form */
 
 .user_register {
   display: none;
