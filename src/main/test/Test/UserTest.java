@@ -16,8 +16,7 @@ public class UserTest {
 	
 	@Test
 	public void userCreateTest() {
-		User user = new User(6, "John", "Doe", "JDoe", "1803 8th Street", "Eau Claire", "WI", "7153130393", "aklick_33@hotmail.com");
-		assertThat(user.getUserID(), is(6));
+		User user = new User("John", "Doe", "JDoe", "1803 8th Street", "Eau Claire", "WI", "7153130393", "aklick_33@hotmail.com", "Hunter1");
 		assertThat(user.getFirstName(), is("John"));
 		assertThat(user.getLastName(), is("Doe"));
 		assertThat(user.getUserName(), is("JDoe"));
@@ -26,6 +25,7 @@ public class UserTest {
 		assertThat(user.getStateCode(), is("WI"));
 		assertThat(user.getPhoneNumber(), is("7153130393"));
 		assertThat(user.getEmailAddress(), is("aklick_33@hotmail.com"));
+		assertThat(user.getPassword(), is("Hunter1"));
 		
 	}
 
