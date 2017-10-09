@@ -27,4 +27,11 @@ $(document).ready(function() {
 	  $(".social_login").show();
 	  $(".header_title").text('Login');
 	});
+	
+	document.onkeydown = function (evt) {
+	    evt = evt || window.event;
+	    if (evt.keyCode == 27) {
+	        $('.popupContainer').hide();
+	    }
+	};
 });
