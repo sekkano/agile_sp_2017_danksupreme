@@ -19,8 +19,8 @@
 						<input type="text" class="driverSignup" name="driverFirstName" placeholder="First Name">
 						<input type="text" class="driverSignup" name="driverLastName" placeholder="Last Name">
 						<input type="tel" class="driverSignup" name="driverPhoneNumber" placeholder="Phone Number">
-						<input type="password" class="driverSignup" name=driverPassword" placeholder="Password">
-						<input type="password" class="driverSignup" name=driverPasswordConfirm" placeholder="Confirm Password">
+						<input type="password" class="driverSignup" name="driverPassword" placeholder="Password">
+						<input type="password" class="driverSignup" name="driverPasswordConfirm" placeholder="Confirm Password">
 						<input type="submit" value="Submit">
 					</form>
 				</div>
