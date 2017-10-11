@@ -68,6 +68,7 @@ public class UserDaoImpl implements UserDao {
   
   @Override
   public List<User> retrieveUsers() throws Exception {
+	  System.out.println("retrive users");
 	  final List<User> users = new ArrayList<>();
 		
 	  final Connection connection = DBUtility.createConnection();
@@ -75,7 +76,7 @@ public class UserDaoImpl implements UserDao {
 		
 	  try{
 		  statement.setQueryTimeout(DBUtility.TIMEOUT);
-			
+		
 		  final ResultSet resultSet = statement.executeQuery(SELECT_ALL_FROM_USERS);
 			
 		  while (resultSet.next()) {
@@ -92,6 +93,7 @@ public class UserDaoImpl implements UserDao {
 	  } finally {
 		  DBUtility.closeConnections(connection, statement);
 	  }
+	  System.out.println(users);
 	  return users;
   }
 
