@@ -14,13 +14,13 @@
 			<div id="riderContent">
 				<div id="driverForm">
 					<h1>Sign up</h1>
-					<form id="driverForm">
-						<input type="text" class="driverSignup" name="driverEmail" placeholder="Email">
-						<input type="text" class="driverSignup" name="driverFirstName" placeholder="First Name">
-						<input type="text" class="driverSignup" name="driverLastName" placeholder="Last Name">
-						<input type="tel" class="driverSignup" name="driverPhoneNumber" placeholder="Phone Number">
-						<input type="password" class="driverSignup" name=driverPassword" placeholder="Password">
-						<input type="password" class="driverSignup" name=driverPasswordConfirm" placeholder="Confirm Password">
+					<form action="SubmitUserData">
+						<input type="text" class="signup" name="userEmailAddress" placeholder="Email">
+						<input type="text" class="signup" name="userFirstName" placeholder="First Name">
+						<input type="text" class="signup" name="userLastName" placeholder="Last Name">
+						<!--<input type="tel" class="signup" name="userPhoneNumber" placeholder="Phone Number">-->
+						<input type="password" class="signup" name="userPassword" placeholder="Password">
+						<input type="password" class="signup" name="userVerifyPassword" placeholder="Verify Password">
 						<input type="submit" value="Submit">
 					</form>
 				</div>

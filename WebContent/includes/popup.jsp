@@ -43,21 +43,27 @@
       <a href="#" class="forgot_password">Forgot password?</a>
     </div>
     <div class="user_register">
-      <form>
-        <label>Full Name</label>
-        <input type="text"/>
+      <form action="SubmitUserData">
+      	<label>Email Address</label>
+        <input type="email" class="signup" name="userEmailAddress"/>
         <br/>
-        <label>Email Address</label>
-        <input type="email"/>
+        <label>First Name</label>
+        <input type="text" class="signup" name="userFirstName"/>
+        <br/>
+        <label>Last Name</label>
+        <input type="text" class="signup" name="userLastName"/>
         <br/>
         <label>Password</label>
-        <input type="password"/>
+        <input type="password" class="signup" name="userPassword"/>
+        <br/>
+        <label>Verify Password</label>
+        <input type="password" class="signup" name="userVerifyPassword"/>
         <br/>
         <div class="action_btns">
           <div class="one_half">
             <a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a>
           </div>
-          <div class="one_half last"><a href="#" class="btn btn_blue">Register</a></div>
+          <div class="one_half last"><input type="submit" class="btn btn_blue" value="Register"></div>
         </div>
       </form>
     </div>
