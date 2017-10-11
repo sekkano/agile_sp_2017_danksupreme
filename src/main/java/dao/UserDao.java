@@ -13,9 +13,9 @@ import model.User;
  */
 public interface UserDao {
 	
-	void submitUserData(String filePath) throws Exception;
+	void populate(String filePath) throws Exception;
 	
-	List<User> retrieveUser() throws Exception;
+	List<User> retrieveUsers() throws Exception;
 	
 	void insertUser(User user) throws Exception;
 
