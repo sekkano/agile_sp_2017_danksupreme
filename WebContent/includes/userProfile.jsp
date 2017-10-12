@@ -4,6 +4,7 @@
 		<c:forEach var="user" items="${users}">
 			<tr>
 				<td>${user.firstName }</td>
+				<td>${user.lastName }</td>
 			</tr>
 		</c:forEach>
 	</table>
