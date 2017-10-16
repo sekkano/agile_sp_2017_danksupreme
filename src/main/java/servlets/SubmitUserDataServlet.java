@@ -1,9 +1,11 @@
 package servlets;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -23,7 +25,7 @@ public class SubmitUserDataServlet extends HttpServlet {
 		String target = null;
 		
 		System.out.println("Stuff is happening");
-		
+
 		try {
 			
 			
@@ -51,9 +53,13 @@ public class SubmitUserDataServlet extends HttpServlet {
 					final UserDao userDao = new UserDaoImpl();
 					userDao.insertUser(user);
 					
-					
 					request.setAttribute("success", "Thanks for joining!");
 					target = "success.jsp";
+					
+					// Sets a user cookie after we get the information from the user.
+					Cookie cookie = new Cookie("userCookies", userFirstName);
+					response.addCookie(cookie);
+					
 				} else {
 					request.setAttribute("error", "The passwords entered do not match.");
 					System.out.println(userPassword + " - " + userVerifyPassword);
