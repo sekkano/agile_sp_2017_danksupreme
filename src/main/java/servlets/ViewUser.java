@@ -19,7 +19,6 @@ public class ViewUser extends HttpServlet {
      */
     public ViewUser() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
 	/**
