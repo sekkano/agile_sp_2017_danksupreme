@@ -31,7 +31,7 @@ public class SubmitUserDataServlet extends HttpServlet {
 			
 			final String userFirstName = request.getParameter("userFirstName");
 			final String userLastName = request.getParameter("userLastName");
-			final String userEmailAddress = request.getParameter("userEmailAddress");
+			final String userEmailAddress = request.getParameter("userEmailAddress").trim();
 //			final String userUserName = request.getParameter("userUserName");
 //			final String userStreetAddress = request.getParameter("userStreetAddress");
 //			final String userCity = request.getParameter("userCity");
@@ -57,8 +57,13 @@ public class SubmitUserDataServlet extends HttpServlet {
 					target = "success.jsp";
 					
 					// Sets a user cookie after we get the information from the user.
-					Cookie cookie = new Cookie("userCookies", userFirstName);
-					response.addCookie(cookie);
+					Cookie cookieFirstName = new Cookie("firstName", userFirstName);
+					Cookie cookieLastName = new Cookie("lastName", userLastName);
+					Cookie cookieEmailAddress = new Cookie("emailAddress", userEmailAddress);
+					
+					response.addCookie(cookieFirstName);
+					response.addCookie(cookieLastName);
+					response.addCookie(cookieEmailAddress);
 					
 				} else {
 					request.setAttribute("error", "The passwords entered do not match.");

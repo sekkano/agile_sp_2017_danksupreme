@@ -7,6 +7,7 @@ import java.io.File;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
@@ -95,6 +96,7 @@ public class UserDaoImpl implements UserDao {
 	  return users;
   }
 
+ 
   @Override
   public void insertUser(final User user) throws Exception {
 		
@@ -127,6 +129,37 @@ public class UserDaoImpl implements UserDao {
 		  DBUtility.closeConnections(connection, insertStatement);
 	  }
 		
+  }
+  
+  
+  @Override
+  public List<User> retrieveCurrentUser(String emailAddress) throws Exception {
+	  
+	  final List<User> users = new ArrayList<>();
+	  
+	  final Connection connection = DBUtility.createConnection();
+	  final Statement statement = connection.createStatement();
+	  
+	  try {
+		  statement.setQueryTimeout(DBUtility.TIMEOUT);
+		  final String sqlStatement = "SELECT * FROM Users WHERE emailAddress LIKE " + "\"" + emailAddress + "\"";
+		  
+		  final ResultSet resultSet = statement.executeQuery(sqlStatement);
+		  
+		  while (resultSet.next()) {
+			  final String firstName = resultSet.getString("firstName");
+			  final String lastName = resultSet.getString("lastName");
+			  final String emailAddressString = resultSet.getString("emailAddress");
+			  final String password = resultSet.getString("password");
+			  
+			  final User user = new User(firstName, lastName, emailAddressString, password);
+			  users.add(user);
+		  }
+		  resultSet.close();
+	  } finally {
+		  DBUtility.closeConnections(connection, statement);
+	  }
+	  return users;
   }
 
 }

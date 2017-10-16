@@ -38,24 +38,37 @@ public class ViewUser extends HttpServlet {
 		// TODO Auto-generated method stub
 		String target = "user.jsp";
 		System.out.println("Hello from View User");
-		
-		PrintWriter out = response.getWriter();
-		//Cookie[]
+		String emailAddress = null;
 		try {
 			final UserDao user = new UserDaoImpl();
-			final List<User> users = user.retrieveUsers();
 			
-			request.setAttribute("users", users);
-			target = "user.jsp";
 			
 			// Grabs the cookie we set in SubmitUserDataServlet as an array
 			// and prints it out.
-			Cookie[] cookies = request.getCookies();
-			for (Cookie cookie : cookies) {
-				if("userCookies".equals(cookie.getName())) {
-					System.out.println("User Name: " + cookie.getValue());
+			Cookie[] cookies = null;
+			Cookie cookie = null;
+						
+			cookies = request.getCookies();
+						
+			for (int i = 0; i < cookies.length; i++) {
+				cookie = cookies[i];
+							
+				if ("firstName".equals(cookie.getName())) {
+					System.out.println("First Name: " + cookie.getValue());
+					//emailAddress = cookie.getValue();
+				}else if ("lastName".equals(cookie.getName())){
+					System.out.println("Last Name: " + cookie.getValue());
+								
+				}else if ("emailAddress".equals(cookie.getName())) {
+					System.out.println("Email Address: " + cookie.getValue());
+					emailAddress = cookie.getValue();			
 				}
-			}
+			
+			} // End for loop
+			System.out.println(emailAddress);
+			final List<User> users = user.retrieveCurrentUser(emailAddress);
+			request.setAttribute("users", users);
+			target = "user.jsp";
 		} catch (Exception e) {
 			e.printStackTrace();
 			request.setAttribute("error", "There was an error");
