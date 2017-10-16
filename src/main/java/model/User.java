@@ -18,7 +18,7 @@ public class User {
 //	private final String phoneNumber;
 	private final String password;
 	
-	public User(String emailAddress, String firstName, String lastName, String password) {
+	public User(String firstName, String lastName, String emailAddress, String password) {
 		this.emailAddress = emailAddress;
 		this.firstName = firstName;
 		this.lastName = lastName;
