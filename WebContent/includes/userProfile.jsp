@@ -5,6 +5,7 @@
 			<tr>
 				<td>${user.firstName }</td>
 				<td>${user.lastName }</td>
+				<td>${user.emailAddress }</td>
 			</tr>
 		</c:forEach>
 	</table>

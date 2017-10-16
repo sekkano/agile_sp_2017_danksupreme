@@ -26,9 +26,10 @@ public class SubmitUserDataServlet extends HttpServlet {
 		
 		try {
 			
-			final String userEmailAddress = request.getParameter("userEmailAddress");
+			
 			final String userFirstName = request.getParameter("userFirstName");
 			final String userLastName = request.getParameter("userLastName");
+			final String userEmailAddress = request.getParameter("userEmailAddress");
 //			final String userUserName = request.getParameter("userUserName");
 //			final String userStreetAddress = request.getParameter("userStreetAddress");
 //			final String userCity = request.getParameter("userCity");
@@ -45,7 +46,7 @@ public class SubmitUserDataServlet extends HttpServlet {
 				userVerifyPassword != null && !userVerifyPassword.isEmpty()) {
 				
 				if (userPassword.equals(userVerifyPassword)) {
-					final User user = new User(userEmailAddress, userFirstName, userLastName, userPassword);
+					final User user = new User(userFirstName, userLastName, userEmailAddress, userPassword);
 					
 					final UserDao userDao = new UserDaoImpl();
 					userDao.insertUser(user);

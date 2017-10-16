@@ -57,8 +57,6 @@ public class UserDaoImpl implements UserDao {
 	  					+ user.getEmailAddress() + "', '"
 	  					+ user.getPassword() + "');";
 	  			
-	  			System.out.println(insertValues);
-	  			
 	  			statement.executeUpdate(insertValues);
 	  		}
 	  	} finally {
@@ -103,8 +101,6 @@ public class UserDaoImpl implements UserDao {
 	  Connection connection = null;
 	  PreparedStatement insertStatement = null;
 	  
-	  
-	  
 	  try {
 			
 		  connection = DBUtility.createConnection();
@@ -124,7 +120,7 @@ public class UserDaoImpl implements UserDao {
 			
 		  insertStatement.setQueryTimeout(DBUtility.TIMEOUT);
 		  insertStatement.executeUpdate();
-		  
+		  System.out.println("First Name: " + user.getFirstName());
 		  System.out.println("Holy S**t, it actually inserted!");
 			
 	  } finally {
