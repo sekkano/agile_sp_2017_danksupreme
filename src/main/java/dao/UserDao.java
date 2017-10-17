@@ -18,5 +18,7 @@ public interface UserDao {
 	List<User> retrieveUsers() throws Exception;
 	
 	void insertUser(User user) throws Exception;
+	
+	List<User> retrieveCurrentUser(String emailAddress) throws Exception;
 
 }
