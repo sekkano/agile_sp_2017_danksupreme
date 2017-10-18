@@ -28,7 +28,6 @@ public class SubmitUserDataServlet extends HttpServlet {
 
 		try {
 			
-			
 			final String userFirstName = request.getParameter("userFirstName");
 			final String userLastName = request.getParameter("userLastName");
 			final String userEmailAddress = request.getParameter("userEmailAddress").trim();
