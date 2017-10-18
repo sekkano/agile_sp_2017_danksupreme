@@ -3,4 +3,4 @@
 
 #### Our task for this project was to create a ride sharing app with some basic functionality.  Our goal wasn't to produce a full app but to get familar with Git/GitHub and get use to working with a team.
 
-###### *Disclaimer* I did not come up with the group name. asd
+###### *Disclaimer* I did not come up with the group name.
