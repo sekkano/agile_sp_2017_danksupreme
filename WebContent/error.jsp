@@ -11,10 +11,12 @@
 	<body>
 		<%@ include file="includes/navigation.jsp" %>
 		<div id="SiteInfo">
-			<div>
-				<h1>Error</h1>
-				<p>${error}</p>
-				<button onclick="goBack()">Back</button>
+			<div id="riderContent">
+				<div id="driverForm">
+					<h1>Error</h1>
+					<p>${error}</p>
+					<button onclick="goBack()">Back</button>
+				</div>
 			</div>
 		</div>
 	</body>

@@ -51,7 +51,7 @@ public class SubmitUserDataServlet extends HttpServlet {
 					userDao.insertUser(user);
 					
 					
-					request.setAttribute("success", "Thanks for joining!");
+					request.setAttribute("success", "Thanks " + userFirstName + " " + userLastName + " for joining!");
 					target = "success.jsp";
 				} else {
 					request.setAttribute("error", "The passwords entered do not match.");
