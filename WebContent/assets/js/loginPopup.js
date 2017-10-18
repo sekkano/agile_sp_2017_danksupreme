@@ -1,12 +1,14 @@
 $(document).ready(function() {
   $(".social_login").show();
   $(".popupContainer").hide(0).delay(500).fadeIn(2000);
+  $("#SiteInfo").animate({opacity: .1}, { duration: 2500 });
   
   $(".model_close").click(function() {
 	  $(".popupContainer").hide();
 	  $(".social_login").hide();
 	  $(".user_register").hide();
 	  $(".user_login").hide();
+	  $("#SiteInfo").animate({opacity: 1}, { duration: 2500 });
 	});
 
 	$("#register_form").click(function() {
