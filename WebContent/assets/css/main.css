@@ -1,7 +1,6 @@
 body {
- background: linear-gradient(to bottom right, #8ED4BB, #082E6A); 
- color: #D6E6F8;
-    
+  background: linear-gradient(to bottom right, #8ED4BB, #082E6A); 
+  color: #D6E6F8;  
 }
 h1 {
   color: #082E6A;
@@ -15,7 +14,6 @@ header {
   padding-left: 2%;
   box-shadow: 3px 3px 3px #082E6A;
 }
-/*Navigation*/
 #head {
 	position: relative;
 }
@@ -35,7 +33,6 @@ header {
   margin-left: 5%;
   padding-left: 10px;
 }
-
 #menu a {
   background-color: #476FAE;
   color: #D6E6F8 ;
@@ -44,22 +41,15 @@ header {
   padding-left: 5px;
   padding-right: 5px;
 }
-
-
 #menu a:visited {
   background-color: #201E75;
 }
-
 #menu a:hover {
   background-color: #15436C;
 }
-
 #menu a:active {
  background-color: #5BB595;
-} 
-
-/*End Nav*/
-
+}
 .infoLeft {
   text-align: left;
   padding-left: 10%;
@@ -70,7 +60,6 @@ header {
   width: 90%;
   margin-right: 80%;
 }
-
 .infoRight {
   padding-right: 10%;
   background-color: #5280B6;
@@ -79,12 +68,10 @@ header {
   box-shadow: 3px 3px 3px #082E6A;
   width: 90%;
 }
-
 .infoRight p, .infoRight h1 {
 	padding-left: 50%;
 	overflow: visible;
 }
-
 input[type=text], select, textarea, .driverSignup {
   width: 100%;
   padding: 12px; 
@@ -95,7 +82,6 @@ input[type=text], select, textarea, .driverSignup {
   margin-bottom: 16px;
   resize: vertical;
 }
-
 input[type=submit] {
   background-color: #00CFEC;
   color: white;
@@ -105,10 +91,11 @@ input[type=submit] {
   cursor: pointer;
   margin-bottom: 20px;
 }
-
 input[type=submit]:hover {
   background-color: #028B9E;
 }
+<<<<<<< HEAD
+=======
 
 button {
   background-color: #00CFEC;
@@ -124,16 +111,15 @@ button:hover {
   background-color: #028B9E;
 }
 
+>>>>>>> master
 .container {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
 }
-
 #message {
   height: 200px;
 }
-
 footer {
   background-color: #3b5998; 
   color: #D6E6F8;
@@ -145,12 +131,10 @@ footer {
   box-shadow: 3px 3px 3px #082E6A;
   padding-top: 10px; 
 }
-
 #radio {
   padding-right: 50px;
   padding-bottom: 50px;
-  }
-  
+}
 #van {
   float:right;
   width:30%;
@@ -159,7 +143,6 @@ footer {
   bottom: 70px;
   z-index: 0;
 }
-
 #why {
   float: left;
   width: 15%;
@@ -167,11 +150,9 @@ footer {
   left: 200px;
   bottom: 10px;
 }
-
 #pickup {
   width: 50%;
 }
-
 #map {
   float: right;
   width: 300px;
@@ -182,7 +163,6 @@ footer {
   border-style: solid;
   border-width: 10px;
 }
-
 #mapDownload {
   background-color: #476FAE;
   color: #D6E6F8 ;
@@ -190,7 +170,6 @@ footer {
   text-decoration: none;
   box-shadow: 3px 3px 3px #082E6A;
 }
-
 #dank {
 	left: 600px;
 	bottom: -17px;
@@ -199,7 +178,6 @@ footer {
 	width: 5%;
 	margin: auto;
 }
-
 #driverContent, #riderContent {
   text-align: center;
   padding-left: 10%;
@@ -211,7 +189,6 @@ footer {
   width: 50%;
   border-radius: 40px;
 }
-
 #contactContent {
   padding-right: 4%;
   padding-left: 4%;
@@ -221,7 +198,6 @@ footer {
   border-radius: 40px;
   box-shadow: 3px 3px 3px #082E6A;
 }
-
 #contactContent h1{
   text-align: center;
 }
@@ -240,7 +216,6 @@ footer {
 		right: 10px;
 	}
 }
-
 @media screen and (min-width: 1030px) and (max-width: 1200px) {
   #logo img {
     width: 75%;
@@ -264,7 +239,6 @@ footer {
 		display: none;
 	}
 }
-
 @media screen and (min-width: 830px) and (max-width: 1030px) {
   #head {
     padding-bottom: 2%;
@@ -291,7 +265,6 @@ footer {
 		display: none;
 	}
 }
-
 @media screen and (max-width: 830px) {
 	#head {
     padding-bottom: 2%;
@@ -315,9 +288,8 @@ footer {
   
   .infoRight p {
 	  padding-left: 0%;
-	}
+  }
 }
-
 @media screen and (max-width: 1030px) {
 	.largeScreen {
   	display: none;
