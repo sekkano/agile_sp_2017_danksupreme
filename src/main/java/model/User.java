@@ -8,9 +8,9 @@ package model;
  *
  */
 public class User {
-	private final String emailAddress;
 	private final String firstName;
 	private final String lastName;
+	private final String emailAddress;
 //	private final String userName;
 //	private final String streetAddress;
 //	private final String city;
@@ -19,9 +19,9 @@ public class User {
 	private final String password;
 	
 	public User(String firstName, String lastName, String emailAddress, String password) {
-		this.emailAddress = emailAddress;
 		this.firstName = firstName;
 		this.lastName = lastName;
+		this.emailAddress = emailAddress;
 //		this.userName = userName;
 //		this.streetAddress = streetAddress;
 //		this.city = city;
