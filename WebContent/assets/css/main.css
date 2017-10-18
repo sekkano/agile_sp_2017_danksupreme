@@ -94,8 +94,6 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: #028B9E;
 }
-<<<<<<< HEAD
-=======
 
 button {
   background-color: #00CFEC;
@@ -111,7 +109,6 @@ button:hover {
   background-color: #028B9E;
 }
 
->>>>>>> master
 .container {
   border-radius: 5px;
   background-color: #f2f2f2;
@@ -201,6 +198,12 @@ footer {
 #contactContent h1{
   text-align: center;
 }
+
+#userTable td{
+	padding: 5px;
+	width: 25%;
+}
+
 @media screen and (min-width:1200px) and (max-width: 1400px) {
 	#menu {
 	  font-size: 28px;

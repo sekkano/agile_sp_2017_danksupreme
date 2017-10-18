@@ -35,13 +35,11 @@ public class ViewUser extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+
 		String target = "user.jsp";
-		System.out.println("Hello from View User");
 		String emailAddress = null;
 		try {
 			final UserDao user = new UserDaoImpl();
-			
 			
 			// Grabs the cookie we set in SubmitUserDataServlet as an array
 			// and prints it out.
@@ -52,28 +50,20 @@ public class ViewUser extends HttpServlet {
 						
 			for (int i = 0; i < cookies.length; i++) {
 				cookie = cookies[i];
-							
-				if ("firstName".equals(cookie.getName())) {
-					System.out.println("First Name: " + cookie.getValue());
-					//emailAddress = cookie.getValue();
-				}else if ("lastName".equals(cookie.getName())){
-					System.out.println("Last Name: " + cookie.getValue());
-								
-				}else if ("emailAddress".equals(cookie.getName())) {
-					System.out.println("Email Address: " + cookie.getValue());
-					emailAddress = cookie.getValue();			
+				if ("emailAddress".equals(cookie.getName())) {
+					emailAddress = cookie.getValue();
 				}
 			
 			} // End for loop
-			System.out.println(emailAddress);
+			
 			final List<User> users = user.retrieveCurrentUser(emailAddress);
 			request.setAttribute("users", users);
 			target = "user.jsp";
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 			request.setAttribute("error", "There was an error");
 		}
-		//response.getWriter().append("Served at: ").append(request.getContextPath());
 		request.getRequestDispatcher(target).forward(request, response);
 	}
 
