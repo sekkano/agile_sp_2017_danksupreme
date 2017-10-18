@@ -15,11 +15,11 @@
 				<div id="driverForm">
 					<h1>Sign up</h1>
 					<form action="SubmitUserData">
-						<input type="text" class="signup" name="userEmailAddress" placeholder="Email">
-						<input type="text" class="signup" name="userFirstName" placeholder="First Name">
-						<input type="text" class="signup" name="userLastName" placeholder="Last Name">
-						<input type="password" class="signup" name="userPassword" placeholder="Password">
-						<input type="password" class="signup" name="userVerifyPassword" placeholder="Verify Password">
+						<input type="text" class="driverSignup" name="userEmailAddress" placeholder="Email">
+						<input type="text" class="driverSignup" name="userFirstName" placeholder="First Name">
+						<input type="text" class="driverSignup" name="userLastName" placeholder="Last Name">
+						<input type="password" class="driverSignup" name="userPassword" placeholder="Password">
+						<input type="password" class="driverSignup" name="userVerifyPassword" placeholder="Verify Password">
 						<input type="submit" value="Submit">
 					</form>
 				</div>
